@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Platinum — GTA VI Trophy Guide &amp; Tracker</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='7' fill='%23ff5c8a'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="masthead-text">
+    <p class="kicker">Grand Theft Auto VI · PlayStation 5 · Official list, 2026-11-18</p>
+    <h1>Leonida Platinum</h1>
+    <p class="subtitle">The offline trophy guide &amp; tracker for all 55 GTA VI trophies — 1 platinum · 2 gold · 6 silver · 46 bronze · 28 hidden on PlayStation. Tick them off, read the guide, follow the road to the platinum.</p>
+  </div>
+  <div class="progress-card" id="progress-card">
+    <div class="big-count"><span id="earned-count">0</span><span class="of">/ 55</span></div>
+    <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
+    <p class="progress-note" id="progress-note">0% toward the platinum</p>
+    <p class="grade-chips" id="grade-chips"></p>
+  </div>
+</header>
+
+<nav class="tabs" aria-label="Sections">
+  <a href="#/checklist" data-tab="checklist">Checklist</a>
+  <a href="#/roadmap" data-tab="roadmap">Roadmap to Platinum</a>
+  <a href="#/missables" data-tab="missables">Missables <span class="tab-badge" id="missable-badge">7</span></a>
+</nav>
+
+<section class="toolbar" id="toolbar">
+  <label class="search">Search <input id="search" type="search" placeholder="Trophy name or word…" autocomplete="off"></label>
+  <div class="kind-filters" id="kind-filters" role="group" aria-label="Filter by kind">
+    <button type="button" data-kind="all" class="active">All</button>
+    <button type="button" data-kind="story">Story</button>
+    <button type="button" data-kind="missable">Missable</button>
+    <button type="button" data-kind="collectibles">Collectibles</button>
+    <button type="button" data-kind="activities">Activities</button>
+  </div>
+  <label>Grade <select id="grade">
+    <option value="all">All grades</option>
+    <option value="platinum">Platinum</option>
+    <option value="gold">Gold</option>
+    <option value="silver">Silver</option>
+    <option value="bronze">Bronze</option>
+  </select></label>
+  <label class="check"><input id="hide-earned" type="checkbox"> Hide earned</label>
+  <label class="check spoiler"><input id="spoiler" type="checkbox"> Spoiler-free: hide story trophies until earned</label>
+  <span class="spacer"></span>
+  <button id="export" type="button">Export progress</button>
+  <label class="import">Import progress <input id="import" type="file" accept="application/json"></label>
+  <button id="reset" type="button" class="quiet">Reset</button>
+</section>
+
+<main id="main">
+  <section id="view-checklist" class="view">
+    <div class="layout">
+      <div class="list-col">
+        <p class="list-meta" id="list-meta"></p>
+        <ul class="trophy-list" id="trophy-list"></ul>
+      </div>
+      <aside class="detail-col" id="detail-col">
+        <div class="planner" id="planner"></div>
+        <article class="detail" id="detail"></article>
+      </aside>
+    </div>
+  </section>
+  <section id="view-roadmap" class="view" hidden>
+    <p class="page-intro">Six stages, in order, from the first mission to the platinum. Each stage is built from the official descriptions: which story chapters and missions, which collectibles and counts, and what order to do them in. Earn the story trophies as they come, do the missable moments on your first pass, and leave the long grinds for last.</p>
+    <div id="roadmap"></div>
+  </section>
+  <section id="view-missables" class="view" hidden>
+    <p class="page-intro">Seven trophies are flagged missable — not because the official list says so (it does not use the word), but because their descriptions read like one-time moments: an unscheduled departure, a showroom smash, a cocktail at the start, a choice you cannot take back. The game released on 2026-11-19 and no guide has confirmed the exact triggers yet, so each flag is our reading of the official description, stated as such in its guide. When the moment comes, take it.</p>
+    <div id="missables"></div>
+  </section>
+</main>
+
+<footer>
+  <p><strong>Sources.</strong> Trophy names, descriptions and grades: the official PlayStation 5 list as published on <a href="https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/">Exophase</a> and <a href="https://psnprofiles.com/trophies/43531-grand-theft-auto-vi">PSNProfiles</a> (the two agree on every name, description and grade). Tracked counts (42 Shooting Range challenges, 250 stunts, 14 drone race locations, 18 meditation spots, 9 gangs, 52 areas, 8 garages, 500 choices) are PlayStation's counts as PSNProfiles lists them. Every guide is written in our own words from those descriptions — never copied from another guide — and says plainly where a place or step is not pinned down by the official description.</p>
+  <p>Leonida Platinum is a fan-made guide. It is not affiliated with Rockstar Games, and it shows no Rockstar logo, official artwork or game screenshots. It runs entirely offline from its own files: your checklist, notes and settings live only in this browser (localStorage), and export/import moves them as a file you own. MIT licensed.</p>
+</footer>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
